@@ -4,45 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Web</title>
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <h1>Weather Web</h1>
-        <p>Whether you're watching the weather or wanting a warning on the warm and windy, 
+    <header class="site-header">
+        <h1 class="header-title">Weather Web</h1>
+        <p class="header-text">Whether you're watching the weather or wanting a warning on the warm and windy, 
         you're welcome to witness it here!</p> 
-        <div>
-            <label for="">City/Zip Code:</label>
+        <div class="location-container">
+            <label for="" class="location-label">City/Zip Code:</label>
             <input type="text" id="location-input" placeholder="Enter city or zip code" class="location-input">
         </div>
     </header>
-    <section>
-        <div>
+    <section class="main-container">
+        <div class="forecast-container">
             <img src="https://media.istockphoto.com/id/1007768414/photo/blue-sky-with-bright-sun-and-clouds.jpg?s=612x612&w=0&k=20&c=MGd2-v42lNF7Ie6TtsYoKnohdCfOPFSPQt5XOz4uOy4=" 
             alt="Depicting the forecast" 
             id="forecast-image"
                 <!-- Comment -->
-            <div>
+            <div class="forecast-info">
                 <h3>Forecast</h3>
                 <ul>
-                    <li>
+                    <li class="forecast-detail">
                         <div>
                             <h4>Date</h4>
                             <span id="date-detail">Oct 16th, 2025</span>
                         </div>
                     </li>
-                    <li>
+                    <li class="forecast-detail">
                         <div>
                             <h4>Weather</h4>
                             <span id="weather-detail">Sunny</span>
                         </div>
                     </li>
-                    <li>
+                    <li class="forecast-detail">
                         <div>
                             <h4>Average Temperature</h4>
                             <span id="temperature-detail">85f</span>
                         </div>
                     </li>
-                    <li>
+                    <li class="forecast-detail">
                         <div>
                             <h4>Humidity</h4>
                             <span id="humidity-detail">80%</span>
@@ -52,9 +53,9 @@
             </div>
         </div>
 
-        <div>
+        <div class="forecast-controls">
             <button id="prev-button">Previous Day</button>
-            <button id="weather-button">Get Weather</button>
+            <button id="weather-button" class="weather-button">Get Weather</button>
             <button id="next-button">Next Day</button>
         </div>
 
